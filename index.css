@@ -1,4 +1,18 @@
-    /* --- 1. Variables y Reset --- */
+/* 1. Definición de la fuente local */
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+/* 2. Aplicación al cuerpo */
+body {
+    font-family: 'Roboto', sans-serif;
+}   
+   
+   
+   /* --- 1. Variables y Reset --- */
     :root {
         --bg-dark: #0f172a;       /* Fondo Header */
         --bg-light: #f1f5f9;      /* Fondo de la página */
