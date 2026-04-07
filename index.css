@@ -1,4 +1,18 @@
-    /* --- 1. Variables y Reset --- */
+/* 1. Definición de la fuente local */
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+/* 2. Aplicación al cuerpo */
+body {
+    font-family: 'Roboto', sans-serif;
+}   
+   
+   
+   /* --- 1. Variables y Reset --- */
     :root {
         --bg-dark: #0f172a;       /* Fondo Header */
         --bg-light: #f1f5f9;      /* Fondo de la página */
@@ -169,30 +183,22 @@
     }
 
     #miFormulario input, #miFormulario textarea {
-        background-color: #0f172a; /* Fondo más oscuro para los campos */
-        border: 0.0625rem solid #334155;
-        color: white;
-        padding: 0.75rem;
-        border-radius: 0.375rem;
-        width: 100%;
-        margin-top: 0.5rem;
-        margin-bottom: 1.25rem;
-    }
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 0.9375rem;
+    border-radius: 0.375rem;
+    border: 0.0625rem solid #334155;
+    background-color: #0f172a; /* Fondo más oscuro para los campos */
+    color: white;
+}
 
-    #miFormulario input:focus, #miFormulario textarea:focus {
-        outline: none;
-        border-color: var(--accent-color); /* Brilla verde cuando escribís */
-        box-shadow: 0 0 8px rgba(34, 197, 94, 0.3);
-    }
+#miFormulario input:focus, #miFormulario textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0.625rem rgba(34, 197, 94, 0.2);
+}
 
 
-    #miFormulario {
-        background-color: var(--card-bg); /* El azul oscuro que ya usamos */
-        padding: 2rem;
-        border-radius: 0.75rem;
-        color: var(--text-light);
-        border: 0.0625rem solid rgba(255, 255, 255, 0.1);
-    }
 
     #miFormulario label {
         display: block;
@@ -201,18 +207,5 @@
         color: var(--accent-color); /* Los labels en verde  */
     }
 
-    #miFormulario input, #miFormulario textarea {
-        width: 100%;
-        padding: 0.75rem;
-        margin-bottom: 0.9375rem;
-        border-radius: 0.375rem;
-        border: 0.0625rem solid #334155;
-        background-color: #0f172a; /* Fondo más oscuro para los campos */
-        color: white;
-    }
-
-    #miFormulario input:focus, #miFormulario textarea:focus {
-        outline: none;
-        border-color: var(--accent-color);
-        box-shadow: 0 0 0.625rem rgba(34, 197, 94, 0.2);
-    }
+    
+    
