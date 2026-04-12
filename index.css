@@ -4,8 +4,8 @@
     font-weight: 100 900;
     font-style: normal;
 }   
-    /* --- 1. Variables y Reset --- */
-    :root {
+    /* --- 1. Variables y Reset --- */  
+    :root { 
         --bg-dark: #0f172a;       /* Fondo Header */
         --bg-light: #f1f5f9;      /* Fondo de la página */
         --card-bg: #1e293b;       /* Fondo de las cajitas (Oscuro) */
