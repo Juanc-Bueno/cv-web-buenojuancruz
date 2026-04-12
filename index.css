@@ -3,9 +3,7 @@
     src: url('fonts/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
-}
-
-    
+}   
     /* --- 1. Variables y Reset --- */
     :root {
         --bg-dark: #0f172a;       /* Fondo Header */
