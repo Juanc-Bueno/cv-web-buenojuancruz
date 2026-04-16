@@ -1,4 +1,5 @@
- :root {
+   /* --- 1. Variables y Reset --- */
+    :root {
         --bg-dark: #0f172a;       /* Fondo Header */
         --bg-light: #f1f5f9;      /* Fondo de la página */
         --card-bg: #1e293b;       /* Fondo de las cajitas (Oscuro) */
@@ -13,16 +14,15 @@
         padding: 0;
         box-sizing: border-box;
         font-family: 'Roboto', sans-serif;
-    }
-
-    body {
+    }  
+     
+    .main-body {
         background-color: var(--bg-light);
         color: var(--text-dark);
         line-height: 1.6;
     }
-
     /* --- 2. Estructura --- */
-    main {
+   .main-content {
        max-width: 56.25rem;
         margin: 2rem auto;
         background: #fff;
@@ -31,7 +31,7 @@
         box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     }
 
-    header {
+   .main-header {
         text-align: center;
         background-color: var(--bg-dark);
         color: var(--text-light);
@@ -40,26 +40,26 @@
         margin: -2rem -2rem 2rem -2rem; /* Lo pega a los bordes */
     }
 
+
     /* --- 3. Foto y Títulos --- */
-    .profile-img {
+   .profile-img {
         display: block;
         margin: 0 auto 1rem auto;
-        width: 8.75rem;
-        height: 8.75rem;
+        width: 8.75rem;;
+        height: 8.75rem;;
         border-radius: 50%;
         border: 0.25rem solid var(--accent-color);
         object-fit: cover;
         transition: 0.3s;
-}
+    }
 
-.profile-img:hover {
+   .profile-img:hover {
         transform: scale(1.05);
         filter: brightness(1.1);
         cursor: pointer;
-}
+    }
 
-   .section-title {
-    
+   .section-title {    
         color: var(--bg-dark); /* Color oscuro para el título de sección */
         font-size: 1.8rem;
         margin-bottom: 1.5rem;
@@ -75,6 +75,8 @@
         padding: 1.5625rem;
       border-radius: 0.625rem;
        margin-bottom: 1.25rem;
+        transition: 0.3s;
+        border: 1px solid rgba(255,255,255,0.1);
     }
 
     .skill-category:hover, .job-item:hover {
@@ -83,9 +85,31 @@
         box-shadow: 0 10px 20px rgba(0,0,0,0.3);
     }
 
+    .skill-category-title {
+        color: var(--text-light);
+    }
+
+    .skill-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .job-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .job-bullet {
+    list-style-type: square;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
     /* Ajuste de los links dentro de las cajas */
     .job-link {
-   color: var(--accent-color) !important;
+    color: var(--accent-color) !important;
     font-weight: bold;
     text-decoration: none;
 }
@@ -103,31 +127,28 @@
     text-decoration: underline;
 }
     /* Estilo de la lista de habilidades */
-    
-
     .skill-item {
         list-style: none;
         position: relative;
         padding-left: 25px;
         margin-bottom: 10px;
         color: var(--text-dim) !important;
-}
+    }
 
-.skill-item-title {
+    .skill-item-title {
         color: var(--text-light) !important;
         font-size: 1.1rem;
-}
+    }
 
-.skill-item::before {
+    .skill-item::before {
         content: "■";
         color: var(--accent-color);
         position: absolute;
         left: 0;
         text-shadow: 0 0 5px var(--accent-color);
-}
+    }
 
-    /* --- 5. Formulario --- */
-   
+    /* --- 5. Formulario --- */  
     .btn-primary {
         background-color: var(--accent-color);
         color: white;
@@ -137,23 +158,24 @@
         font-weight: bold;
         cursor: pointer;
         transition: 0.3s;
-}
+    }
 
-.btn-primary:hover {
+   .btn-primary:hover {
          filter: brightness(1.1);
-        transform: scale(1.02);
-}
+        transform: scale(1.02);  
+    }
 
+    /* Agregá esto al final de tu index.css */
    .form-container {
-       background-color: var(--card-bg); /* El azul oscuro que ya usamos */
-        padding: 2rem;
+        background-color: var(--card-bg); /* El azul oscuro de las cajas */
+        padding: 1.875rem;
         border-radius: 0.75rem;
         color: var(--text-light);
-        border: 0.0625rem solid rgba(255, 255, 255, 0.1);
-}
+        border: 0.0625rem solid rgba(255,255,255,0.1);
+    }
 
-.form-input {
-         background-color: #0f172a; /* Fondo más oscuro para los campos */
+    .form-input {
+        background-color: #0f172a; /* Fondo más oscuro para los campos */
         border: 0.0625rem solid #334155;
         color: white;
         padding: 0.75rem;
@@ -161,19 +183,20 @@
         width: 100%;
         margin-top: 0.5rem;
         margin-bottom: 1.25rem;
-}
+    }
 
-.form-input:focus {
+   .form-input:focus {
         outline: none;
         border-color: var(--accent-color); /* Brilla verde cuando escribís */
         box-shadow: 0 0 8px rgba(34, 197, 94, 0.3);
-}
+    }
 
-.form-label {
+   .form-label {
         display: block;
         margin-bottom: 0.5rem;
         font-weight: bold;
         color: var(--accent-color); /* Los labels en verde  */
-}
 
-    
+
+
+    }
