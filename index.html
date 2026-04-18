@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Mi Curriculum Vitae</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
-    <header>
-        
-    <a class="logo-link" href="https://www.frlp.utn.edu.ar/" target="_blank" rel="noopener noreferrer">
-        <img src="img/utn.png.jpg" alt="Logo UTN La Plata" id="foto">
+<body class="main-body">
+    <header class="main-header">
+
+    <a class="logo-link" href="https://www.frlp.utn.edu.ar/" target="_blank">
+        <img src="img/utn.png.jpg" alt="Logo UTN La Plata" class="profile-img">
     </a>
 
-        <h1>Bueno Juan Cruz</h1>
-        <p>Desarrollador Python / Django & Estudiante de Sistemas</p>
+        <h1 class="header-title">Bueno Juan Cruz</h1>
+        <p class="header-subtitle">Desarrollador Python / Django & Estudiante de Sistemas</p>
     </header>
-   
-<section id="sobre-mi">
-    <h2>Sobre mí</h2>
+
+<section class="sobre-mi">
+    <h2 class="section-title">Sobre mí</h2>
     <p class="perfil-descripcion">
         Soy un apasionado estudiante de Programación en la <strong>UTN Regional La Plata</strong>, 
         enfocado en el desarrollo de soluciones backend con <strong>Python y Django</strong>. 
@@ -28,17 +31,17 @@
     </p>
 </section>
 
-<section id="experiencia">
-    <h2>Experiencia Profesional</h2>
-    <div class="job-item clearfix">
+<section class="experiencia"> 
+    <h2 class="section-title">Experiencia Profesional</h2>
+    <div class="job-item ">
         <span class="date">2023 - Actualidad</span>
         <p class="job-title">Desarrollador Python Junior</p>
         <p class="company">
           Trabajando en <a class="job-link" href="https://www.globant.com/es" target="_blank" rel="noopener noreferrer">Sistemas Globales S.A. (Globant)</a>
         </p>
-        <ul>
-            <li>Desarrollo de scripts para automatización de procesos.</li>
-            <li>Mantenimiento de bases de datos SQL.</li>
+        <ul class="job-list">
+           <li class="job-bullet">Desarrollo de scripts para automatización de procesos.</li>
+            <li class="job-bullet">Mantenimiento de bases de datos SQL.</li>
         </ul>
         <p>Contacto de referencia: 
            <a class="job-link" href="mailto:rrhh@globant.com">rrhh@globant.com</a>
@@ -46,63 +49,64 @@
     </div>
 </section>
 
-
    <div class="skills-container">
+
     <div class="skill-category">
-        <h3>Lenguajes Core</h3>
-        <ul>
-            <li><strong>Python:</strong> Desarrollo backend, automatización y scripting.</li>
-            <li><strong>Java:</strong> Programación Orientada a Objetos (POO), manejo de colecciones y threads.</li>
-            <li><strong>C++ / C#:</strong> Fundamentos de algoritmos y estructuras de datos.</li>
-            <li><strong>JavaScript (ES6+):</strong> Desarrollo de lógica para el lado del cliente.</li>
-            <li><strong>SQL:</strong> Modelado relacional y optimización de queries.</li>
+        <h3 class="skill-category-title">Lenguajes Core</h3>
+        <ul class="skill-list">
+          <li class="skill-item"><strong class="skill-item-title">Python:</strong> Desarrollo backend, automatización y scripting.</li>
+            <li class="skill-item"><strong class="skill-item-title">Java:</strong> Programación Orientada a Objetos (POO), manejo de colecciones y threads.</li>
+            <li class="skill-item"><strong class="skill-item-title">C++ / C#:</strong> Fundamentos de algoritmos y estructuras de datos.</li>
+            <li class="skill-item"><strong class="skill-item-title">JavaScript (ES6+):</strong> Desarrollo de lógica para el lado del cliente.</li>
+            <li class="skill-item"><strong class="skill-item-title">SQL:</strong> Modelado relacional y optimización de queries.</li>
+        </ul>
+    </div>
+    
+    <div class="skill-category">
+        <h3 class="skill-category-title">Frameworks & Librerías</h3>
+        <ul class="skill-list">
+            <li class="skill-item"><strong class="skill-item-title">Django & Flask:</strong> Desarrollo rápido de aplicaciones web seguras.</li>
+            <li class="skill-item"><strong class="skill-item-title">Spring Boot (Java):</strong> Creación de microservicios y aplicaciones empresariales.</li>
+            <li class="skill-item"><strong class="skill-item-title">Pandas / Matplotlib:</strong> Ciencia de datos y visualización estadística.</li>
+            <li class="skill-item"><strong class="skill-item-title">Node.js:</strong> Entorno de ejecución para aplicaciones JavaScript.</li>
         </ul>
     </div>
 
     <div class="skill-category">
-        <h3>Frameworks & Librerías</h3>
-        <ul>
-            <li><strong>Django & Flask:</strong> Desarrollo rápido de aplicaciones web seguras.</li>
-            <li><strong>Spring Boot (Java):</strong> Creación de microservicios y aplicaciones empresariales.</li>
-            <li><strong>Pandas / Matplotlib:</strong> Ciencia de datos y visualización estadística.</li>
-            <li><strong>Node.js:</strong> Entorno de ejecución para aplicaciones JavaScript.</li>
-        </ul>
-    </div>
-
-    <div class="skill-category">
-        <h3>Software & Tools</h3>
-        <ul>
-            <li><strong>Git / GitHub / GitLab:</strong> Trabajo colaborativo y control de versiones.</li>
-            <li><strong>IntelliJ IDEA / Eclipse:</strong> IDEs principales para desarrollo Java.</li>
-            <li><strong>PyCharm:</strong> Entorno profesional para proyectos Python.</li>
-            <li><strong>Docker:</strong> Virtualización y despliegue en contenedores.</li>
-            <li><strong>PostgreSQL / MySQL / Oracle DB:</strong> Gestión de motores de bases de datos.</li>
-            <li><strong>Jira / Trello:</strong> Metodologías Ágiles (Scrum) y gestión de tareas.</li>
+        <h3 class="skill-category-title">Software & Tools</h3>
+        <ul class="skill-list">
+            <li class="skill-item"><strong class="skill-item-title">Git / GitHub / GitLab:</strong> Trabajo colaborativo y control de versiones.</li>
+            <li class="skill-item"><strong class="skill-item-title">IntelliJ IDEA / Eclipse:</strong> IDEs principales para desarrollo Java.</li>
+            <li class="skill-item"><strong class="skill-item-title">PyCharm:</strong> Entorno profesional para proyectos Python.</li>
+            <li class="skill-item"><strong class="skill-item-title">Docker:</strong> Virtualización y despliegue en contenedores.</li>
+            <li class="skill-item"><strong class="skill-item-title">PostgreSQL / MySQL / Oracle DB:</strong> Gestión de motores de bases de datos.</li>
+            <li class="skill-item"><strong class="skill-item-title">Jira / Trello:</strong> Metodologías Ágiles (Scrum) y gestión de tareas.</li>
         </ul>
     </div>
 </div>
 
-<section id="contacto-form">
-    <h2>Enviame un mensaje</h2>
-    <form id="miFormulario">
-        <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
-        </div>
+<section class="contacto-form">
+    <h2 class="section-title">Enviame un mensaje</h2>
+    <form class="form-container">
+    <div class="form-group">
+      <label for="nombre" class="form-label">Nombre:</label>
+      <input id="nombre" name="nombre" class="form-input" type="text" placeholder="Tu nombre completo" required>
+    </div>
+    <div class="form-group">
+        <label for="email" class="form-label">Email:</label>
+        <input id="email" name="email" class="form-input" type="email" placeholder="tu@email.com" required>
+    </div>
 
         <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            <label for="mensaje" class="form-label">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"  class="form-input" rows="4" placeholder="¿En qué puedo ayudarte?" required></textarea>
         </div>
 
-        <div class="form-group">
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué puedo ayudarte?" required></textarea>
-        </div>
 
-        <button type="submit" id="btn-enviar">Enviar Formulario</button>
+        <button type="submit" class="btn-primary">Enviar Formulario</button>
     </form>
 </section>
 
 <script src="script.js"></script>
+
 </body>
